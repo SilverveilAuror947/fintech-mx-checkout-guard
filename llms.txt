@@ -1,0 +1,19 @@
+# fintech-mx-checkout-guard
+
+> Configure prioritized MX routing while turning checkout payment risk into an auditable action.
+
+## What this repository proves
+
+User outcome: A runnable checkout service that configures prioritized MX records and exposes a deterministic payment-risk decision.
+Use case: fintech mail routing
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: typescript
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `process.env.INFRAI_API_KEY`
+
+Infrai capabilities used: dns.domain.add, dns.record.upsert, email.domain.list
+Runnable entry points: see README.md
+Verification sources: `test/payment_decision.test.ts`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt

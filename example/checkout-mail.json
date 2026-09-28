@@ -1,0 +1,15 @@
+{
+  "requestId": "storefront-order-1042",
+  "domain": "payments.example.com",
+  "mxRecords": [
+    { "content": "mx2.mailhost.example", "priority": 20 },
+    { "content": "mx1.mailhost.example", "priority": 10 }
+  ],
+  "payment": {
+    "orderId": "order_1042",
+    "amountMinor": 15900,
+    "currency": "USD",
+    "status": "captured",
+    "riskScore": 86
+  }
+}
